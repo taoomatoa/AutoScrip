@@ -3,7 +3,7 @@ echo ""
 clear
 echo ""
 echo " .......................................................... "
-echo "                  Autoscript By Taoomatoa
+echo "                  Autoscript By Taoomatoa   "
 echo "                 Original Script by SamVPN                  "
 echo ""
 echo "                       Build in 2021                        "
