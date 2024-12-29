@@ -1,5 +1,5 @@
 #wget https://github.com/${GitUser}/
-GitUser="ndmservis"
+GitUser="taoomatoa"
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
 		exit 1
@@ -10,7 +10,7 @@ if [ "$(systemd-detect-virt)" == "openvz" ]; then
 fi
 echo ""
 version=$(cat /home/ver)
-ver=$( curl https://raw.githubusercontent.com/${GitUser}/autoscript/main/version )
+ver=$( curl https://raw.githubusercontent.com/${GitUser}/AutoScrip/main/version )
 clear
 # LINE COLOUR
 line=$(cat /etc/line)
@@ -95,35 +95,35 @@ echo ""
 echo -e "\e[0;32mNew Version Downloading started!\e[0m"
 sleep 2
 cd /usr/bin
-wget -q -O /usr/bin/usernew "https://franata775.xcodehoster.com/v1.5/usernew.sh"
-wget -q -O /usr/bin/add-ws "https://franata775.xcodehoster.com/v1.5/add-ws.sh"
-wget -q -O /usr/bin/add-ssws "https://franata775.xcodehoster.com/v1.5/add-ssws.sh"
-wget -q -O /usr/bin/add-vless "https://franata775.xcodehoster.com/v1.5/add-vless.sh"
-wget -q -O /usr/bin/add-tr "https://franata775.xcodehoster.com/v1.5/add-tr.sh"
-wget -q -O /usr/bin/autoreboot "https://franata775.xcodehoster.com/v1.5/options/autoreboot.sh"
-wget -q -O /usr/bin/restart "https://franata775.xcodehoster.com/v1.5/options/restart.sh"
-wget -q -O /usr/bin/tendang "https://franata775.xcodehoster.com/v1.5/options/tendang.sh"
-wget -q -O /usr/bin/clearlog "https://franata775.xcodehoster.com/v1.5/options/clearlog.sh"
-wget -q -O /usr/bin/running "https://franata775.xcodehoster.com/v1.5/options/running.sh"
+wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/usernew.sh"
+wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/add-ws.sh"
+wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/add-ssws.sh"
+wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/add-vless.sh"
+wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/add-tr.sh"
+wget -q -O /usr/bin/autoreboot "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/options/autoreboot.sh"
+wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/options/restart.sh"
+wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/options/tendang.sh"
+wget -q -O /usr/bin/clearlog "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/options/clearlog.sh"
+wget -q -O /usr/bin/running "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/options/running.sh"
 #wget -q -O /usr/bin/cek-trafik "https://raw.githubusercontent.com/arzvpn/Arzv/main/options/cek-trafik.sh"
-wget -q -O /usr/bin/speedtest "https://franata775.xcodehoster.com/v1.5/tools/speedtest_cli.py"
-wget -q -O /usr/bin/cek-bandwidth "https://franata775.xcodehoster.com/v1.5/options/cek-bandwidth.sh"
-wget -q -O /usr/bin/limitspeed "https://franata775.xcodehoster.com/v1.5/options/limitspeed.sh"
-wget -q -O /usr/bin/menu-vless "https://franata775.xcodehoster.com/v1.5/menu/menu-vless.sh"
-wget -q -O /usr/bin/menu-vmess "https://franata775.xcodehoster.com/v1.5/menu/menu-vmess.sh"
-wget -q -O /usr/bin/menu-ss "https://franata775.xcodehoster.com/v1.5/menu/menu-ss.sh"
-wget -q -O /usr/bin/menu-trojan "https://franata775.xcodehoster.com/v1.5/menu/menu-trojan.sh"
-wget -q -O /usr/bin/menu-ssh "https://franata775.xcodehoster.com/v1.5/menu/menu-ssh.sh"
-wget -q -O /usr/bin/menu-backup "https://franata775.xcodehoster.com/v1.5/menu/menu-backup.sh"
-wget -q -O /usr/bin/menu "https://franata775.xcodehoster.com/v1.5/menu/menu.sh"
-wget -q -O /usr/bin/webmin "https://franata775.xcodehoster.com/v1.5/options/webmin.sh"
-wget -q -O /usr/bin/xp "https://franata775.xcodehoster.com/v1.5/xp.sh"
-wget -q -O /usr/bin/update "https://franata775.xcodehoster.com/v1.5/options/update.sh"
-wget -q -O /usr/bin/addhost "https://franata775.xcodehoster.com/v1.5/menu/addhost.sh"
-wget -q -O /usr/bin/certxray "https://franata775.xcodehoster.com/v1.5/menu/crt.sh"
-wget -q -O /usr/bin/menu-set "https://franata775.xcodehoster.com/v1.5/menu/menu-set.sh"
-wget -q -O /usr/bin/info "https://franata775.xcodehoster.com/v1.5/options/info.sh"
-wget -q -O /usr/bin/infoserv "https://franata775.xcodehoster.com/v1.5/options/infoserv.sh"
+wget -q -O /usr/bin/speedtest "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/tools/speedtest_cli.py"
+wget -q -O /usr/bin/cek-bandwidth "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/options/cek-bandwidth.sh"
+wget -q -O /usr/bin/limitspeed "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/options/limitspeed.sh"
+wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/menu/menu-vless.sh"
+wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/menu/menu-vmess.sh"
+wget -q -O /usr/bin/menu-ss "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/menu/menu-ss.sh"
+wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/menu/menu-trojan.sh"
+wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/menu/menu-ssh.sh"
+wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/menu/menu-backup.sh"
+wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/menu/menu.sh"
+wget -q -O /usr/bin/webmin "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/options/webmin.sh"
+wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/xp.sh"
+wget -q -O /usr/bin/update "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/options/update.sh"
+wget -q -O /usr/bin/addhost "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/menu/addhost.sh"
+wget -q -O /usr/bin/certxray "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/menu/crt.sh"
+wget -q -O /usr/bin/menu-set "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/menu/menu-set.sh"
+wget -q -O /usr/bin/info "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/options/info.sh"
+wget -q -O /usr/bin/infoserv "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/options/infoserv.sh"
 chmod +x /usr/bin/usernew
 chmod +x /usr/bin/add-ws
 chmod +x /usr/bin/add-ssws
