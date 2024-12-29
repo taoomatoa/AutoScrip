@@ -1,36 +1,36 @@
 #!/bin/bash
-echo ''
+echo ""
 clear
-echo ''
-echo ' .......................................................... '
-echo '                  Autoscript By Taoomatoa
-echo '                 Original Script by SamVPN                  '
-echo ''
-echo '                       Build in 2021                        '
-echo ''
-echo '                         Telegram                           '
-echo '                  Telegram SamVPN @Pendekar19               '
-echo ''
+echo ""
+echo " .......................................................... "
+echo "                  Autoscript By Taoomatoa
+echo "                 Original Script by SamVPN                  "
+echo ""
+echo "                       Build in 2021                        "
+echo ""
+echo "                         Telegram                           "
+echo "                  Telegram SamVPN @Pendekar19               "
+echo ""
 
-echo '                       Tunggu 5 Detik!                      '
-echo ' .......................................................... '
+echo "                       Tunggu 5 Detik!                      "
+echo " .......................................................... "
 sleep 5
 clear
-echo '============================================='
-echo '      Silahkan Tunggu beberapa meni          '
-echo ' Process Update & Upgrade Sedang Dijalankan  '
-echo '============================================='
+echo "============================================="
+echo "      Silahkan Tunggu beberapa meni          "
+echo " Process Update & Upgrade Sedang Dijalankan  "
+echo "============================================="
 sleep 2
 apt update && apt upgrade -y
 clear
-echo '============================================='
-echo '      Process Update&Upgrade Selesai         '
-echo '============================================='
+echo "============================================="
+echo "      Process Update&Upgrade Selesai         "
+echo "============================================="
 sleep 2
 clear
-echo '============================================='
-echo '     Process Selanjutnya Silahkan Tunggu     '
-echo '============================================='
+echo "============================================="
+echo "     Process Selanjutnya Silahkan Tunggu     "
+echo "============================================="
 sleep 2
 echo -e "${GREEN}Starting Installation............${NC}"
 cd /root/
@@ -98,7 +98,7 @@ RECORD=$(curl -sLX POST "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_
 -H "X-Auth-Email: ${CF_ID}" \
 -H "X-Auth-Key: ${CF_KEY}" \
 -H "Content-Type: application/json" \
---data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}' | jq -r .result.id)
+--data "{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}' | jq -r .result.id)
 fi
 RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records/${RECORD}" \
 -H "X-Auth-Email: ${CF_ID}" \
@@ -187,24 +187,24 @@ exit 1
 fi
 }
 clear
-echo '============================================='
-echo '        Installing SISTEM '
-echo '============================================='
+echo "============================================="
+echo "        Installing SISTEM "
+echo "============================================="
 wget -q https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/tools/arzsource.sh && chmod +x arzsource.sh && ./arzsource.sh
-echo '============================================='
-echo '        Installing SSH & WS '
-echo '============================================='
+echo "============================================="
+echo "        Installing SSH & WS "
+echo "============================================="
 wget -q https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/tools/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
-echo '============================================='
-echo '        Installing BR '
-echo '============================================='
+echo "============================================="
+echo "        Installing BR "
+echo "============================================="
 wget -q https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
-echo '============================================='
-echo '        Installing SLOWDNS '
-echo '============================================='
+echo "============================================="
+echo "        Installing SLOWDNS "
+echo "============================================="
 wget https://raw.githubusercontent.com/Andyvpn/Autoscript-by-azi/main/autoscript-ssh-slowdns-main/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
-echo '        Installing XRAY '
-echo '============================================='
+echo "        Installing XRAY "
+echo "============================================="
 wget -q https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/tools/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 
 echo -e "${GREEN}Download Data${NC}"
@@ -314,9 +314,9 @@ fi
 curl -sS ifconfig.me > /etc/myipvps
 clear
 echo " "
-echo '============================================='
+echo "============================================="
 echo "       Installation has been completed!!"
-echo '============================================='
+echo "============================================="
 sleep 3
 echo " "
 echo "=================================-Autoscript Premium-===========================" | tee -a log-install.txt
