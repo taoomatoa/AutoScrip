@@ -123,7 +123,7 @@ commonname=ArzVpn
 email=admin@arzvip.site
 
 # simple password minimal
-wget -q -O /etc/pam.d/common-password "https://franata775.xcodehoster.com/v1.5/tools/password"
+wget -q -O /etc/pam.d/common-password "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/tools/password"
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -161,7 +161,7 @@ cd
 clear 
 
 # Getting websocket ssl stunnel
-wget -q -O /usr/local/bin/ws-stunnel "https://franata775.xcodehoster.com/v1.5/tools/ws-stunnel"
+wget -q -O /usr/local/bin/ws-stunnel "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/tools/ws-stunnel"
 chmod +x /usr/local/bin/ws-stunnel
 
 # Installing Service Ovpn Websocket
@@ -308,7 +308,7 @@ fi
 
 # Install Stunnel5
 cd /root/
-wget -q "https://franata775.xcodehoster.com/v1.5/tools/stunnel5.zip"
+wget -q "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/tools/stunnel5.zip"
 unzip stunnel5.zip
 cd /root/stunnel
 chmod +x configure
@@ -371,7 +371,7 @@ END
 
 # Service Stunnel5 /etc/init.d/stunnel5
 rm -fr /etc/init.d/stunnel5
-wget -q -O /etc/init.d/stunnel5 "https://franata775.xcodehoster.com/v1.5/tools/stunnel5.init"
+wget -q -O /etc/init.d/stunnel5 "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/tools/stunnel5.init"
 
 # Ubah Izin Akses
 #chmod 600 /etc/stunnel5/stunnel5.pem
@@ -492,7 +492,7 @@ rm -fr /etc/issue.net
 rm -fr /etc/issue.net.save
 sleep 1
 echo -e "[ ${green}INFO$NC ] Settings banner"
-wget -q -O /etc/issue.net "https://franata775.xcodehoster.com/v1.5/issue.net"
+wget -q -O /etc/issue.net "https://raw.githubusercontent.com/taoomatoa/AutoScrip/main/issue.net"
 chmod +x /etc/issue.net
 echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
